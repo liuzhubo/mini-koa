@@ -5,4 +5,6 @@ app.use(async (ctx) => {
   ctx.body = "Hello World";
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("server running in port 3000...");
+});
